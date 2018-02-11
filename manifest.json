@@ -1,7 +1,7 @@
 {
   "manifest_version" : 2,
-  "name": "Pupil",
-  "description": "Make the web more accessible by utilizing computer vision!",
+  "name": "PicTalk",
+  "description": "speaks the visual features of an image",
   "version" : "0.1",
 
   "browser_action": {
