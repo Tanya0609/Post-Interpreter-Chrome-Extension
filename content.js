@@ -1,8 +1,12 @@
 $(document).ready(function () {
+	console.log("requesting start");
+	analyzeImage();
+
+});
 
 //function that detect and analyze a image that you hover on
-	console.log("requesting start");
-	$('img').mouseover(function() {
+function analyzeImage(){
+		$('img').mouseover(function() {
 		 	console.log("analyze image ...");
 		 	console.log("image: " + this.src);
 
@@ -47,7 +51,8 @@ $(document).ready(function () {
 		 							 errorString += (jqXHR.responseText === "") ? "" : jQuery.parseJSON(jqXHR.responseText).message;
 		 							 //console.log(errorString);
 		 					 });
-	});
+		});
+};
 
 //function that converts the analzye result into speech
 function textToSpeech(analyzeResult){
@@ -133,5 +138,3 @@ function textToSpeech(analyzeResult){
 	}
 
 };
-
-});
