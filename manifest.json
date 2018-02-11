@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension allows the user to change the background color of the current page.",
+  "name": "Post Interpreter Chrome Extension",
+  "description": "This extension speaks the visual features of an image.",
   "version": "1.0",
 
   "browser_action": {
@@ -12,5 +12,7 @@
   "permissions": [
     "activeTab",
     "storage"
+    "tts"
+    
   ]
 }
